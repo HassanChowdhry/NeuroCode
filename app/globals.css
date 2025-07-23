@@ -1,0 +1,10 @@
+@import '../css-variables.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    min-height: 100vh;
+    background: #f9fafb;
+    color: #18181b;
+}

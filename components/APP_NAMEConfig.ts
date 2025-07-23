@@ -1,0 +1,1 @@
+export const APP_NAME = "NeuroCode"; // TODO: Replace with your brand name or dynamic config 

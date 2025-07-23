@@ -1,0 +1,430 @@
+/* NeuroCode Design System CSS Custom Properties */
+
+:root {
+    /* Light Theme Colors */
+    --color-primary-50: #f0f9ff;
+    --color-primary-100: #e0f2fe;
+    --color-primary-200: #bae6fd;
+    --color-primary-300: #7dd3fc;
+    --color-primary-400: #38bdf8;
+    --color-primary-500: #0ea5e9;
+    --color-primary-600: #0284c7;
+    --color-primary-700: #0369a1;
+    --color-primary-800: #075985;
+    --color-primary-900: #0c4a6e;
+    --color-primary-950: #082f49;
+
+    --color-neutral-50: #fafafa;
+    --color-neutral-100: #f5f5f5;
+    --color-neutral-200: #e5e5e5;
+    --color-neutral-300: #d4d4d4;
+    --color-neutral-400: #a3a3a3;
+    --color-neutral-500: #737373;
+    --color-neutral-600: #525252;
+    --color-neutral-700: #404040;
+    --color-neutral-800: #262626;
+    --color-neutral-900: #171717;
+    --color-neutral-950: #0a0a0a;
+
+    --color-success-50: #f0fdf4;
+    --color-success-500: #22c55e;
+    --color-success-600: #16a34a;
+    --color-success-700: #15803d;
+
+    --color-warning-50: #fffbeb;
+    --color-warning-500: #f59e0b;
+    --color-warning-600: #d97706;
+    --color-warning-700: #b45309;
+
+    --color-error-50: #fef2f2;
+    --color-error-500: #ef4444;
+    --color-error-600: #dc2626;
+    --color-error-700: #b91c1c;
+
+    --color-info-50: #eff6ff;
+    --color-info-500: #3b82f6;
+    --color-info-600: #2563eb;
+    --color-info-700: #1d4ed8;
+
+    /* Typography */
+    --font-family-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-family-mono: JetBrains Mono, "Fira Code", "Cascadia Code", "Source Code Pro", monospace;
+    --font-family-display: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    /* Font Sizes */
+    --font-size-display-1: 4.5rem;
+    --font-size-display-2: 3.75rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.875rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+    --font-size-h6: 1.125rem;
+    --font-size-body-large: 1.125rem;
+    --font-size-body: 1rem;
+    --font-size-body-small: 0.875rem;
+    --font-size-caption: 0.75rem;
+    --font-size-code-large: 1.125rem;
+    --font-size-code: 0.875rem;
+    --font-size-code-small: 0.75rem;
+
+    /* Font Weights */
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    /* Line Heights */
+    --line-height-tight: 1.25;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+    --line-height-loose: 2;
+
+    /* Spacing */
+    --spacing-0: 0px;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-8: 2rem;
+    --spacing-10: 2.5rem;
+    --spacing-12: 3rem;
+    --spacing-16: 4rem;
+    --spacing-20: 5rem;
+    --spacing-24: 6rem;
+
+    /* Border Radius */
+    --border-radius-none: 0px;
+    --border-radius-sm: 0.125rem;
+    --border-radius-base: 0.25rem;
+    --border-radius-md: 0.375rem;
+    --border-radius-lg: 0.5rem;
+    --border-radius-xl: 0.75rem;
+    --border-radius-2xl: 1rem;
+    --border-radius-3xl: 1.5rem;
+    --border-radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-none: none;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+    /* Focus */
+    --focus-outline: 2px solid rgb(14 165 233);
+    --focus-offset: 2px;
+    --focus-high-contrast-outline: 3px solid rgb(14 165 233);
+    --focus-high-contrast-offset: 1px;
+
+    /* Monaco Editor Light Theme */
+    --monaco-light-background: #ffffff;
+    --monaco-light-foreground: #171717;
+    --monaco-light-selection: #bae6fd;
+    --monaco-light-selection-background: #e0f2fe;
+    --monaco-light-line-numbers: #737373;
+    --monaco-light-line-numbers-active: #171717;
+    --monaco-light-cursor: #171717;
+    --monaco-light-cursor-width: 2px;
+    --monaco-light-syntax-keywords: #dc2626;
+    --monaco-light-syntax-strings: #16a34a;
+    --monaco-light-syntax-numbers: #7c3aed;
+    --monaco-light-syntax-comments: #6b7280;
+    --monaco-light-syntax-functions: #2563eb;
+    --monaco-light-syntax-variables: #171717;
+    --monaco-light-syntax-types: #059669;
+    --monaco-light-syntax-operators: #171717;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    /* Dark Theme Colors */
+    --color-primary-50: #082f49;
+    --color-primary-100: #0c4a6e;
+    --color-primary-200: #075985;
+    --color-primary-300: #0369a1;
+    --color-primary-400: #0284c7;
+    --color-primary-500: #0ea5e9;
+    --color-primary-600: #38bdf8;
+    --color-primary-700: #7dd3fc;
+    --color-primary-800: #bae6fd;
+    --color-primary-900: #e0f2fe;
+    --color-primary-950: #f0f9ff;
+
+    --color-neutral-50: #0a0a0a;
+    --color-neutral-100: #171717;
+    --color-neutral-200: #262626;
+    --color-neutral-300: #404040;
+    --color-neutral-400: #525252;
+    --color-neutral-500: #737373;
+    --color-neutral-600: #a3a3a3;
+    --color-neutral-700: #d4d4d4;
+    --color-neutral-800: #e5e5e5;
+    --color-neutral-900: #f5f5f5;
+    --color-neutral-950: #fafafa;
+
+    --color-success-50: #052e16;
+    --color-success-500: #22c55e;
+    --color-success-600: #4ade80;
+    --color-success-700: #86efac;
+
+    --color-warning-50: #451a03;
+    --color-warning-500: #f59e0b;
+    --color-warning-600: #fbbf24;
+    --color-warning-700: #fcd34d;
+
+    --color-error-50: #450a0a;
+    --color-error-500: #ef4444;
+    --color-error-600: #f87171;
+    --color-error-700: #fca5a5;
+
+    --color-info-50: #0c4a6e;
+    --color-info-500: #3b82f6;
+    --color-info-600: #60a5fa;
+    --color-info-700: #93c5fd;
+
+    /* Dark Theme Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+
+    /* Monaco Editor Dark Theme */
+    --monaco-dark-background: #0a0a0a;
+    --monaco-dark-foreground: #fafafa;
+    --monaco-dark-selection: #0c4a6e;
+    --monaco-dark-selection-background: #082f49;
+    --monaco-dark-line-numbers: #a3a3a3;
+    --monaco-dark-line-numbers-active: #fafafa;
+    --monaco-dark-cursor: #fafafa;
+    --monaco-dark-cursor-width: 2px;
+    --monaco-dark-syntax-keywords: #dc2626;
+    --monaco-dark-syntax-strings: #16a34a;
+    --monaco-dark-syntax-numbers: #7c3aed;
+    --monaco-dark-syntax-comments: #6b7280;
+    --monaco-dark-syntax-functions: #2563eb;
+    --monaco-dark-syntax-variables: #fafafa;
+    --monaco-dark-syntax-types: #059669;
+    --monaco-dark-syntax-operators: #fafafa;
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --focus-outline: var(--focus-high-contrast-outline);
+        --focus-offset: var(--focus-high-contrast-offset);
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Utility Classes for CSS Custom Properties */
+.text-primary-500 {
+    color: var(--color-primary-500);
+}
+
+.bg-primary-500 {
+    background-color: var(--color-primary-500);
+}
+
+.border-primary-500 {
+    border-color: var(--color-primary-500);
+}
+
+.text-neutral-900 {
+    color: var(--color-neutral-900);
+}
+
+.bg-neutral-50 {
+    background-color: var(--color-neutral-50);
+}
+
+.border-neutral-200 {
+    border-color: var(--color-neutral-200);
+}
+
+.shadow-base {
+    box-shadow: var(--shadow-base);
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.rounded-base {
+    border-radius: var(--border-radius-base);
+}
+
+.rounded-lg {
+    border-radius: var(--border-radius-lg);
+}
+
+.font-sans {
+    font-family: var(--font-family-sans);
+}
+
+.font-mono {
+    font-family: var(--font-family-mono);
+}
+
+.text-body {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-normal);
+}
+
+.text-h1 {
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-semibold);
+}
+
+.text-h3 {
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-tight);
+    font-weight: var(--font-weight-semibold);
+}
+
+.text-code {
+    font-size: var(--font-size-code);
+    line-height: var(--line-height-loose);
+    font-family: var(--font-family-mono);
+}
+
+/* Focus utilities */
+.focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-offset);
+}
+
+/* Component utilities */
+.btn-primary {
+    background-color: var(--color-primary-500);
+    color: white;
+    border: none;
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--border-radius-base);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-body);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-600);
+}
+
+.btn-primary:active {
+    background-color: var(--color-primary-700);
+}
+
+.btn-primary:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-offset);
+}
+
+.btn-primary:disabled {
+    background-color: var(--color-neutral-300);
+    color: var(--color-neutral-500);
+    cursor: not-allowed;
+}
+
+.input-text {
+    background-color: var(--color-neutral-50);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--border-radius-base);
+    padding: var(--spacing-3) var(--spacing-4);
+    font-size: var(--font-size-body);
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input-text:focus {
+    border-color: var(--color-primary-500);
+    outline: none;
+}
+
+.input-text:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-offset);
+}
+
+.input-text.error {
+    border-color: var(--color-error-500);
+}
+
+.input-text:disabled {
+    background-color: var(--color-neutral-100);
+    color: var(--color-neutral-400);
+    cursor: not-allowed;
+}
+
+.card {
+    background-color: var(--color-neutral-50);
+    border: 1px solid var(--color-neutral-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-base);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.card-elevated {
+    background-color: var(--color-neutral-50);
+    border: none;
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-md);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card-elevated:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.code-inline {
+    background-color: var(--color-neutral-100);
+    color: var(--color-neutral-900);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-code-small);
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--border-radius-sm);
+}
+
+.code-block {
+    background-color: var(--color-neutral-50);
+    border: 1px solid var(--color-neutral-200);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-4);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-code);
+    line-height: var(--line-height-loose);
+    overflow: auto;
+}
