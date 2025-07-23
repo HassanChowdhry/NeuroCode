@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { APP_NAME } from "./APP_NAMEConfig";
+import { Sparkles, ArrowRight } from "lucide-react";
 
 export function HeroSpotlight() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen h-screen py-20 overflow-hidden bg-background">
-      {/* Animated Spotlight Background */}
+    <section className="relative flex items-center justify-center min-h-[calc(100vh-64px)] h-[calc(100vh-64px)] overflow-hidden bg-background">
       <Spotlight
         gradientFirst="radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(250,100%,85%,0.08) 0, hsla(250,100%,60%,0.04) 50%, hsla(250,100%,45%,0) 80%)"
         gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(250,100%,85%,0.06) 0, hsla(250,100%,55%,0.02) 80%, transparent 100%)"
@@ -19,10 +19,11 @@ export function HeroSpotlight() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 flex flex-col items-center text-center max-w-2xl mx-auto px-4 gap-6"
+        className="z-10 flex flex-col pb-[150px] items-center text-center max-w-4xl mx-auto px-4 gap-6"
       >
-        <Badge className="mb-2 text-base px-4 py-2 bg-primary/80 text-primary-foreground shadow-lg">
-          AI-Powered Recommendations
+        <Badge variant="secondary">
+          <Sparkles className="w-4 h-4 mr-2" />
+          AI-Powered Learning
         </Badge>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +51,7 @@ export function HeroSpotlight() {
             Get Started
           </Button>
           <Button size="lg" variant="outline" className="px-8 py-4 text-lg">
-            See How It Works
+            See How It Works <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 hover:translate-x-1" />
           </Button>
         </motion.div>
       </motion.div>

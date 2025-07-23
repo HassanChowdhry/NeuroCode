@@ -2,7 +2,7 @@
 import * as React from "react"
 import { useState } from "react"
 import { Bell, CheckCircle, BadgeCheck, BookOpen, Sparkles, Loader2 } from 'lucide-react'
-import { Button } from '@/client/components/ui/button'
+import { Button } from '@/components/ui/button'
 
 export type NotificationType = 'submission' | 'badge' | 'study' | 'ai'
 
