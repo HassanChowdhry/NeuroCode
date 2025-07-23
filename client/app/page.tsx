@@ -1,4 +1,3 @@
-import { APP_NAME } from '@/components/APP_NAMEConfig'
 import { HeroSpotlight } from '@/components/HeroSpotlight'
 import { FeatureBento } from '@/components/FeatureBento'
 import { HowItWorks } from '@/components/HowItWorks'
